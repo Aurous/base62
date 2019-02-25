@@ -1,19 +1,7 @@
 base62
 ======
 
-|Build Status| |Coveralls| |PyPI|
-
-A Python module for ``base62`` encoding. Ported from PHP code that I wrote
-in mid-2000, which can be found
-`here <http://blog.suminb.com/archives/558>`__.
-
-.. |Build Status| image:: https://travis-ci.org/suminb/base62.svg?branch=master
-   :target: https://travis-ci.org/suminb/base62
-.. |PyPI| image:: https://img.shields.io/pypi/v/pybase62.svg
-   :target: https://pypi.python.org/pypi/pybase62
-.. |Coveralls| image:: https://coveralls.io/repos/github/suminb/base62/badge.svg?branch=master
-   :target: https://coveralls.io/github/suminb/base62?branch=develop
-
+A Python module for ``base62`` encoding. Forked from https://github.com/suminb/base62
 
 Rationale
 ---------
@@ -39,20 +27,9 @@ In other words, encoded data can be sorted without being decoded at all.
 
 Installation
 ============
-
-``base62`` can be installed via ``pypi``. Unfortunately, the package name
-``base62`` on ``pypi`` had already been occupied by someone else, so we had to
-go by ``pybase62``.
-
 ::
 
-    pip install pybase62
-
-Alternatively, you may clone the code to manually install it.
-
-::
-
-    git clone https://github.com/suminb/base62
+    git clone https://github.com/aurous/base62
     cd base62 && python setup.py install
 
 Usage
@@ -101,12 +78,3 @@ If ``pytest`` is not installed, you may want to run the following commands:
 
     pip install -r tests/requirements.txt
 
-
-Deployment
-==========
-
-Deploy a source package (to `pypi <https://pypi.org>`_) as follows:
-
-::
-
-    python setup.py sdist upload

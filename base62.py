@@ -6,9 +6,11 @@ Originated from http://blog.suminb.com/archives/558
 """
 
 __title__ = 'base62'
-__author__ = 'Sumin Byeon'
-__email__ = 'suminb@gmail.com'
-__version__ = '0.4.0'
+__originalAuthor__ = 'Sumin Byeon'
+__originalEmail__ = 'suminb@gmail.com'
+__aurthor__ = 'Ryan Hill'
+__email__ = 'ltryanhill@gmail.com'
+__version__ = '0.4.1'
 
 BASE = 62
 CHARSET_DEFAULT = (
