@@ -61,7 +61,7 @@ def encodebytes(s, charset=CHARSET_DEFAULT):
 
 
 def decode(b, charset=CHARSET_DEFAULT):
-    """Decodes a base62 encoded value ``b``."""
+	"""Decodes a base62 encoded value ``b``."""
 
 	l, i, v = len(b), 0, 0
 	for x in b:
