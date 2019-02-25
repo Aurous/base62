@@ -20,9 +20,6 @@ def test_const():
 
 def test_basic():
     assert base62.encode(0) == '0'
-    assert base62.encode(0, minlen=0) == '0'
-    assert base62.encode(0, minlen=1) == '0'
-    assert base62.encode(0, minlen=5) == '00000'
     assert base62.decode('0') == 0
     assert base62.decode('0000') == 0
     assert base62.decode('000001') == 1
@@ -36,9 +33,6 @@ def test_basic_inverted():
     kwargs = {'charset': base62.CHARSET_INVERTED}
 
     assert base62.encode(0, **kwargs) == '0'
-    assert base62.encode(0, **kwargs) == '0'
-    assert base62.encode(0, **kwargs) == '0'
-    assert base62.encode(0, **kwargs) == '00000'
     assert base62.decode('0', **kwargs) == 0
     assert base62.decode('0000', **kwargs) == 0
     assert base62.decode('000001', **kwargs) == 1
